@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "type": "blob",
+      "name": "minifiedblob",
+      "path": "thumbs/{name}",
+      "connection": "AzureWebJobsDashboard",
+      "direction": "out"
+    },
+    {
+      "type": "blobTrigger",
+      "name": "myBlob",
+      "path": "inputcontainer/{name}",
+      "connection": "AzureWebJobsDashboard",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
