@@ -19,6 +19,7 @@ public static void Run(Stream myBlob,string name, Stream minifiedblob, TraceWrit
             Stream outputImage = new MemoryStream();
                imageBuilder.Build(myBlob, minifiedblob,
                    new ResizeSettings(size.Width, size.Height, FitMode.Max, null), false);
+           log.Info($"C# Blob trigger function Completed");
 }
 
 public enum ImageSize
