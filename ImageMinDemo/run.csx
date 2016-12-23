@@ -12,7 +12,7 @@ public static void Run(Stream myBlob,string name, Stream minifiedblob, TraceWrit
 {
     
             //myBlob.CopyTo(minifiedblob); 
-            log.Info($"C# Blob trigger function Processing blob\n Name:{name} \n Size: {myBlob.Length} Bytes");
+            log.Info($"Meetup Sample C# Blob trigger function Processing blob\n Name:{name} \n Size: {myBlob.Length} Bytes");
             var imageBuilder = ImageBuilder.Current;
             var size = imageDimensionsTable[ImageSize.Small].Key;
            
